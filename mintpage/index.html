@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+
+    <title>Test Web</title>
+</head>
+<body>
+    <section class="mint-page" id="mint-page">
+        <div class="container">
+            <div class="row">
+                <div class="mint-tm-bg-white-transparent">
+                    <div style="text-align: center;">
+                        <h2>MINT NOW!</h2>
+                        <h1>Wallet Control</h1>
+                        <button id="btnConnectWallet" onclick="connectWallet()" style="padding: 1px; border-radius: 10px;">
+                            <h3 id="txtConnectWalletBtn">Connect Wallet</h3>
+                        </button>
+                    </div>
+                    <div style="text-align: center;">
+                        <h1>Your Wallet balance</h1>
+                        <a id="txtWalletBalance">-</a><a> Ether</a>
+                    </div>
+                    <div style="text-align: center;">
+                        <h1>NFT Count</h1>
+                        <p><a id="txtTotalSupply">-</a>/<a id="txtMaxSupply">-</a></p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h1>Mint Price <br>0.01 Ether+Gas fee</h1>
+                        <button id="btnMintAmount" style="width: 30px;" onclick="btnMintAmount('minus')">-</button><a
+                            id="txtMintAmount" style="margin: 15px;">1</a><button id="btnMintAmount" style="width: 30px; "
+                            onclick="btnMintAmount('plus')">+</button>
+                        <br>
+                        <button id="MintBtn" onclick="mint()" style="margin: 15px; border-radius: 10px;">
+                            <h3 id="txtMintBtn">Connect Wallet</h3>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/mint.js"></script>
+    <script src="js/smartcontract.js"></script>
+</body>
+</html>
